@@ -3,7 +3,7 @@ const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
-const editInput = document.querySelector("#todo-input");
+const editInput = document.querySelector("#edit-input");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 
 let oldInputValue;
@@ -25,14 +25,14 @@ const saveTodo = (text) => {
 
 
     const editBtn = document.createElement("button");
-    editBtn.classList.add("remove-todo")
-    editBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+    editBtn.classList.add("edit-todo")
+    editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>'
     todo.appendChild(editBtn)
 
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.classList.add("finish-todo")
-    deleteBtn.innerHTML = '<i class="fa-solid fa-check"></i>'
+    deleteBtn.classList.add("remove-todo")
+    deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     todo.appendChild(deleteBtn)
 
     todoList.appendChild(todo);
@@ -116,3 +116,4 @@ editForm.addEventListener("submit", (e) => {
     toggleForms();
 
 });
+

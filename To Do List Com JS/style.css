@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("imagem\ de\ fundo.webp");
+    background-image: url("imagem\ de\ fundo\ 2.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -148,7 +148,7 @@ input, select {
 }
 
 .done {
-    background-color: #395169;
+    background-color: #00BFFF;
 }
 
 .done h3 {
