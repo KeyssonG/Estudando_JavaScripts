@@ -117,3 +117,10 @@ editForm.addEventListener("submit", (e) => {
 
 });
 
+
+// Initialize particle.JS
+
+particlesJS.load('particles-js', 'particles.json', () => {
+    console.log('callback - particles.js config loaded');
+});
+
